@@ -1,0 +1,23 @@
+{
+  "name": "addons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf build",
+    "build": "npm run clean && node-gyp configure build",
+    "start": "node .",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^7.0.0",
+    "node-gyp": "^9.4.0"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.1"
+  }
+}
